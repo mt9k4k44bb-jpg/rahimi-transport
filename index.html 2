@@ -1,0 +1,148 @@
+
+<header class="site-header">
+  <a class="logo" href="#home">ÉLÉGANCE</a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰ Menu</button>
+  <nav id="main-nav">
+    <a href="#home">Home</a>
+    <a href="#dining">Dining</a>
+    <a href="#suites">Suites</a>
+    <a href="#experience">Experience</a>
+    <a href="#reservations">Reservations</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">LUXURY DINING · EXCEPTIONAL STAYS</p>
+    <h1>A world of<br><em>refined elegance.</em></h1>
+    <p>Discover unforgettable dining, beautiful suites, and thoughtful hospitality.</p>
+    <a class="gold-button" href="#reservations">Reserve Your Experience</a>
+  </div>
+</section>
+
+<section class="section" id="dining">
+  <p class="eyebrow">THE ART OF DINING</p>
+  <h2>Exceptional <em>flavours.</em></h2>
+  <p class="section-intro">Thoughtfully prepared dishes, inspired by the finest ingredients.</p>
+
+  <div class="card-grid">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=85" alt="Gourmet steak dinner" loading="lazy">
+      <div class="card-info">
+        <span class="label">CHEF'S SELECTION</span>
+        <h3>Signature Steak</h3>
+        <p>Premium ingredients and a beautifully balanced house sauce.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=85" alt="Fresh gourmet pasta" loading="lazy">
+      <div class="card-info">
+        <span class="label">ITALIAN COLLECTION</span>
+        <h3>Truffle Pasta</h3>
+        <p>Silky sauce, fresh pasta, herbs, and seasonal flavours.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85" alt="Elegant dessert" loading="lazy">
+      <div class="card-info">
+        <span class="label">SWEET FINALE</span>
+        <h3>Signature Dessert</h3>
+        <p>An elegant finishing touch to your dining experience.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section suites-section" id="suites">
+  <p class="eyebrow">YOUR PRIVATE RETREAT</p>
+  <h2>Stay in <em>luxury.</em></h2>
+  <p class="section-intro">Relax in thoughtfully designed spaces made for comfort.</p>
+
+  <div class="card-grid">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85" alt="Elegant luxury hotel bedroom" loading="lazy">
+      <div class="card-info">
+        <span class="label">TIMELESS COMFORT</span>
+        <h3>Deluxe Room</h3>
+        <p>A calm, beautifully appointed space for your stay.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=85" alt="Luxury hotel suite interior" loading="lazy">
+      <div class="card-info">
+        <span class="label">EXTRA SPACE</span>
+        <h3>Executive Suite</h3>
+        <p>Generous space with a refined, contemporary atmosphere.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85" alt="Sophisticated luxury interior" loading="lazy">
+      <div class="card-info">
+        <span class="label">THE SIGNATURE EXPERIENCE</span>
+        <h3>Presidential Retreat</h3>
+        <p>Exceptional style, privacy, and thoughtful details.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <div>
+    <p class="eyebrow">MORE THAN A STAY</p>
+    <h2>Every detail.<br><em>Beautifully considered.</em></h2>
+  </div>
+  <p>From welcoming service to memorable meals, discover hospitality designed around you.</p>
+</section>
+
+<section class="section booking-section" id="reservations">
+  <p class="eyebrow">YOUR EXPERIENCE AWAITS</p>
+  <h2>Make a <em>reservation.</em></h2>
+  <p class="section-intro">Send us your preferred details to begin your reservation request.</p>
+
+  <form id="booking-form">
+    <label for="guest-name">Full name</label>
+    <input id="guest-name" name="name" type="text" placeholder="Your full name" required>
+
+    <label for="guest-email">Email address</label>
+    <input id="guest-email" name="email" type="email" placeholder="you@example.com" required>
+
+    <label for="booking-type">Experience</label>
+    <select id="booking-type" name="experience" required>
+      <option value="">Choose an experience</option>
+      <option>Restaurant dining</option>
+      <option>Hotel stay</option>
+      <option>Dining and hotel stay</option>
+    </select>
+
+    <label for="booking-date">Preferred date</label>
+    <input id="booking-date" name="date" type="date" required>
+
+    <label for="guest-count">Number of guests</label>
+    <select id="guest-count" name="guests" required>
+      <option value="">Select guests</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5 or more</option>
+    </select>
+
+    <label for="guest-requests">Special requests (optional)</label>
+    <textarea id="guest-requests" name="requests" rows="4" placeholder="Tell us how we can make your experience special"></textarea>
+
+    <button class="gold-button submit-button" type="submit">Send Reservation Request</button>
+    <p id="form-message" role="status" aria-live="polite"></p>
+    <p class="form-note">Demo form: requests are not sent to a real hotel or restaurant yet.</p>
+  </form>
+</section>
+
+<footer>
+  <a class="logo" href="#home">ÉLÉGANCE</a>
+  <p>Luxury Dining · Exceptional Stays</p>
+  <p>© <span id="year"></span> ÉLÉGANCE. All rights reserved.</p>
+  <p class="creator-credit">Designed &amp; Built by <strong>Matiullah rahimi</strong></p>
+</footer>
