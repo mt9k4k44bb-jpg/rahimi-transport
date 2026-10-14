@@ -248,3 +248,45 @@ button {
         text-align: center;
     }
 }
+
+/* Improve mobile layout */
+@media (max-width: 768px) {
+    section {
+        width: 92%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+
+    section img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+/* Fix the frame width */
+section {
+    width: 100%;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 30px 20px;
+}
+
+/* Keep images inside the frame */
+section img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Improve mobile layout */
+@media (max-width: 600px) {
+    section {
+        width: calc(100% - 24px);
+        padding: 22px 14px;
+    }
+}
